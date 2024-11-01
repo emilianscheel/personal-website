@@ -57,13 +57,13 @@ export function PortfolioComponent() {
                     <img
                         src="/avatar.jpeg"
                         alt="Emilian Scheel Avatar"
-                        className="w-24 h-24 rounded-full border-2 border-primary filter grayscale"
+                        className="w-24 h-24 rounded-full border-2 border-primary"
                     />
 
                     <img
                         src="/profile.jpeg"
                         alt="Emilian Scheel Profile"
-                        className="w-24 h-24 rounded-full ml-[-3rem] border-2 border-primary filter grayscale"
+                        className="w-24 h-24 rounded-full ml-[-3rem] border-2 border-primary"
                     />
                 </div>
 
