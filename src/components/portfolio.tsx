@@ -107,7 +107,7 @@ export function PortfolioComponent() {
                         <p className="text-muted-foreground">I`d love to hear about your project! Let`s discuss how I can help bring your ideas to life.</p>
                         <div className="flex flex-wrap justify-center gap-4 items-center">
                             <Button variant="outline" asChild>
-                                <Link href="mailto:info@dockyar.de">
+                                <Link href="mailto:hello@emiliansch.dev">
                                     <Mail className="mr-1 h-4 w-4" /> Email
                                 </Link>
                             </Button>
@@ -172,7 +172,7 @@ export function PortfolioComponent() {
                         </p>
                         <p>
                             Phone: 0152 25393956<br />
-                            Email: info@dockyar.de
+                            Email: hello@emiliansch.dev
                         </p>
                         <h3 className="text-xl font-semibold">Disclaimer</h3>
                         <p className="text-muted-foreground">
