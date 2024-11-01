@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Portfolio | Emilian Scheel",
-    description: "Emilian Scheel's portfolio of software services",
+    description: "Delivering high-quality software solutions for your business needs",
 };
 
 export default function RootLayout({

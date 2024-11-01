@@ -108,22 +108,22 @@ export function PortfolioComponent() {
                         <div className="flex flex-wrap justify-center gap-4 items-center">
                             <Button variant="outline" asChild>
                                 <Link href="mailto:info@dockyar.de">
-                                    <Mail className="mr-2 h-4 w-4" /> Email
+                                    <Mail className="mr-1 h-4 w-4" /> Email
                                 </Link>
                             </Button>
                             <Button variant="outline" asChild>
                                 <Link href="tel:015225393956">
-                                    <Phone className="mr-2 h-4 w-4" /> Call
+                                    <Phone className="mr-1 h-4 w-4" /> Call
                                 </Link>
                             </Button>
                             <Button variant="outline" asChild>
                                 <Link href="https://www.linkedin.com/in/emilian-scheel" target="_blank" rel="noopener noreferrer">
-                                    <LinkedInLogoIcon className="mr-2 h-4 w-4" /> LinkedIn
+                                    <LinkedInLogoIcon className="mr-1 h-4 w-4" /> LinkedIn
                                 </Link>
                             </Button>
                             <Button variant="outline" asChild>
                                 <Link href="https://www.github.com/emilianscheel" target="_blank" rel="noopener noreferrer">
-                                    <GitHubLogoIcon className="mr-2 h-4 w-4" /> GitHub
+                                    <GitHubLogoIcon className="mr-1 h-4 w-4" /> GitHub
                                 </Link>
                             </Button>
                         </div>
