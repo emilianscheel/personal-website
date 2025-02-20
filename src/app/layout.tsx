@@ -3,8 +3,8 @@ import "./font.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Portfolio | Emilian Scheel",
-    description: "Delivering high-quality software solutions for your business needs",
+    title: "Emilian Scheel",
+    description: "Schlichte Softwarelösungen sowie Design- und Layoutarbeiten von A bis Z – für Selbstständige, kleine Unternehmen und Organisationen",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="de">
             <body>
                 {children}
             </body>
