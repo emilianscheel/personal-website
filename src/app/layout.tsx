@@ -4,7 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Emilian Scheel",
-    description: "Schlichte Softwarelösungen sowie Design- und Layoutarbeiten von A bis Z – für Selbstständige, kleine Unternehmen und Organisationen",
+    description:
+        "Softwarelösungen sowie Design- und Layoutarbeiten von A bis Z – für Selbstständige, kleine Unternehmen und Organisationen",
 };
 
 export default function RootLayout({
@@ -14,9 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="de">
-            <body>
-                {children}
-            </body>
+            <body>{children}</body>
         </html>
     );
 }

@@ -1,30 +1,29 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import { Sheet, SheetContent } from "@/components/ui/sheet"
-import Image from "next/image"
-import { useState } from "react"
-import { ContactComponent } from "./contact"
-import { CustomersComponent } from "./customers"
-import { LegalContent } from "./legal"
-import { OfferComponent } from "./offer"
-import PricingCards from "./pricing"
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
+import Image from "next/image";
+import { useState } from "react";
+import { ContactComponent } from "./contact";
+import { CustomersComponent } from "./customers";
+import { LegalContent } from "./legal";
+import { OfferComponent } from "./offer";
+import PricingCards from "./pricing";
 
 export function PortfolioComponent() {
-    const [isLegalOpen, setIsLegalOpen] = useState(false)
+    const [isLegalOpen, setIsLegalOpen] = useState(false);
 
     const scrollToId = (id: string) => {
-        const element = document.getElementById(id)
+        const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: "smooth" })
+            element.scrollIntoView({ behavior: "smooth" });
         }
-    }
+    };
 
     return (
         <div className="min-h-screen bg-background text-foreground">
             <header className="container mx-auto px-4 py-16 text-center">
-
                 <div className="flex justify-center items-center gap-0 mb-8 mx-auto">
                     <Image
                         src="/avatar.jpeg"
@@ -35,7 +34,7 @@ export function PortfolioComponent() {
                     />
 
                     <Image
-                        src="/profile.jpeg"
+                        src="/profile.png"
                         alt="Emilian Scheel Profile"
                         width={200}
                         height={200}
@@ -44,20 +43,22 @@ export function PortfolioComponent() {
                 </div>
 
                 <h1 className="text-4xl font-bold mb-2">Emilian Scheel</h1>
-                <hr
-                    className="w-16 h-0 bg-secondary mx-auto mb-4"
-                />
+                <hr className="w-16 h-0 bg-secondary mx-auto mb-4" />
                 <p className="text-xl font-medium mb-8 text-primary max-w-2xl mx-auto">
-                    Schlichte Softwarelösungen sowie Design- und Layoutarbeiten von A bis Z – <br />für Selbstständige, kleine Unternehmen und Organisationen
+                    Softwarelösungen sowie Design- und Layoutarbeiten von A bis
+                    Z – <br />
+                    für Selbstständige, kleine Unternehmen und Organisationen
                 </p>
-                <Button size="lg" variant="default" onClick={() => scrollToId('contact')}>
+                <Button
+                    size="lg"
+                    variant="default"
+                    onClick={() => scrollToId("contact")}
+                >
                     Kontakt aufnehmen
                 </Button>
             </header>
 
             <main className="container mx-auto px-4 py-16 space-y-16">
-
-
                 <OfferComponent />
 
                 <Separator />
@@ -73,12 +74,14 @@ export function PortfolioComponent() {
                 <ContactComponent />
 
                 <div className="h-64"></div>
-
             </main>
 
             <footer className="border-t">
                 <div className="container mx-auto px-4 py-8 flex justify-between items-center">
-                    <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Emilian Scheel. Alle Rechte vorbehalten.</p>
+                    <p className="text-sm text-muted-foreground">
+                        &copy; {new Date().getFullYear()} Emilian Scheel. Alle
+                        Rechte vorbehalten.
+                    </p>
                     <Button variant="link" onClick={() => setIsLegalOpen(true)}>
                         Impressum
                     </Button>
@@ -87,14 +90,17 @@ export function PortfolioComponent() {
 
             <Sheet open={isLegalOpen} onOpenChange={setIsLegalOpen}>
                 <SheetContent className="w-full sm:max-w-2xl">
-
+                    <SheetTitle className="mb-4">Impressum</SheetTitle>
                     <LegalContent />
 
-                    <Button className="mt-8" onClick={() => setIsLegalOpen(false)}>
+                    <Button
+                        className="mt-8"
+                        onClick={() => setIsLegalOpen(false)}
+                    >
                         Schließen
                     </Button>
                 </SheetContent>
             </Sheet>
         </div>
-    )
+    );
 }
